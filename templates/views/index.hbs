@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="header__icon">
+            <img src="https://thumbs.gfycat.com/AppropriateAgedCoral-size_restricted.gif" alt="img">
+            {{>header}}
+        </div>
+        
+
+        <p>Use this site to get your weather!</p>
+        <form>
+            <input placeholder="location">
+            <button type="submit">Search</button>
+        </form>
+        
+        <div class="weather">
+            <img id="icon" src="https://thumbs.gfycat.com/AppropriateAgedCoral-size_restricted.gif" alt="img" hidden>
+            <div class="weather__des">
+                <h2 id="temp"></h2>
+                <p id="des"></p>
+            </div>
+        </div>
+        <P id="feel"></P>
+        <p id="address"></p>
+
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
