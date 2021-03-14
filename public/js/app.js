@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
     // icon.setAttribute("hidden", true)
     icon.removeAttribute("hidden")
 
-    fetch(`http://127.0.0.1:3000/weather?address=${location}`).then((response) => {
+    fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 // console.log(data.error)
